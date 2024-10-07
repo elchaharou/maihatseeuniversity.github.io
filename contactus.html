@@ -1,0 +1,233 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+     .header{
+        padding: 100px 40px 20px 40px;
+        background-image: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0,0.7)),url(./images/student.png.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 30vh;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        color: antiquewhite;
+    }
+    .header h1{
+        text-align: center;
+    }
+    .header a{
+        text-decoration: none;
+        float: left;
+        margin: 30pxpx;
+        color: antiquewhite;
+        background: blueviolet;
+        padding: 15px 25px;
+        border-radius: 5px;
+        transition: .7s ease;
+    }
+    .container{
+        padding: 40px 60px ;
+        margin: 50px 100px;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        background-color: blueviolet;
+        border-radius: 5px;
+        box-shadow: 0px 10px 20px black;
+    }
+    .form-container{
+        background-color: antiquewhite;
+        width: 30%;
+        text-align: center;
+        padding: 50px;
+    
+    }
+    form .form-group{
+        margin: 3px;
+        padding: 10px;
+
+
+    }
+    form .form-group input{
+        width: 100%;
+        padding: 10px 15px;
+        background: transparent;
+        border: 1px solid blueviolet;
+        border-radius: 10px;
+        color: blueviolet;
+
+
+    }
+    form .form-group textarea{
+        width: 100%;
+        padding: 10px 15px;
+        background: transparent;
+        border: 1px solid blueviolet;
+        border-radius: 10px;
+        color: blueviolet;
+
+    }
+    form button{
+        width: 40%;
+        color: antiquewhite;
+        background: blueviolet;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 1s ease;
+        font-weight: bold;
+    }
+    form button:hover{
+        transform: scale(1.1);
+        box-shadow: 1px 2px 3px 2px blueviolet;
+        background: antiquewhite;
+        color: blueviolet;
+    }
+    .contact h4{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        color: antiquewhite;
+        font-size: 2rem;
+
+    }
+    .contact .contact-det p{
+        align-items: center;
+        color: antiquewhite;
+    }
+
+    @media (max-width:768px) {
+        .header{
+            min-height: 10vh;
+            background-size: cover;
+            width: 82%;
+
+        }
+        .header h1{
+        text-align: center;
+        font-size: 1.0rem;
+       }
+       .header a{
+        padding: 7px 12px;
+    }
+
+    .container{
+        padding: 10px 40px ;
+        margin:45px;
+        align-items: center;
+        display: block;
+        justify-content: space-around;
+        background-color: blueviolet;
+        border-radius: 5px;
+        box-shadow: 0px 10px 20px black;
+        width: 60%;
+    
+    }
+
+    .form-container{
+        background: none;
+        width: 60%;
+        text-align: center;
+        padding: 15px 0;
+        
+    
+    }
+
+    form .form-group input{
+        width: 200%;
+        padding: 10px 0;
+        background:antiquewhite;
+        border: 1px solid blueviolet;
+        border-radius: 10px;
+        color: blueviolet;
+
+    }
+    
+    form .form-group textarea{
+        width: 100%;
+        padding: 20px 60px;
+        background: antiquewhite;
+        border: 1px solid blueviolet;
+        border-radius: 10px;
+        color: blueviolet;
+        text-align: start;
+    }
+        form button{
+        width: 80%;
+        color: blueviolet;
+        background:antiquewhite;
+        padding: 10px 40px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 1s ease;
+        font-weight: bold;
+    }
+    .contact h4{
+        font-size: 1rem;
+    }
+
+    .contact .contact-det p{
+        align-items: center;
+        color: antiquewhite;
+        font-size: 0.7rem;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+</style>
+<body>
+    <div class="header">
+        <h1>CONTACT US</h1>
+        <a href="index.html">BACK TO HOME</a>
+    </div>
+    <section>
+        <div class="container">
+            <div class="form-container">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name">
+                    </div>
+                  
+                    <div class="form-group">
+                        <input type="email" placeholder="email">
+                    </div>
+                  
+                    <div class="form-group">
+                        <textarea name="" id="" placeholder="Your Massege"></textarea>
+                    </div>
+                    <button>SUBMIT</button>
+                </form>
+            </div>
+
+                <div class="contact">
+                    <h4>Contact Us Throug This</h4>
+                    <div class="contact-det">
+                           <p><i class="fa-regular fa-envelope"></i> maihatseeinternationaluniversity@gmail.com</p>
+                           <p><i class="fa-solid fa-phone"></i>+22786571961 +22785279359 +2348162043460</p>
+                           <p><i class="fa-solid fa-location-dot"></i>zarya opposite kalla transa maradi niger republic</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

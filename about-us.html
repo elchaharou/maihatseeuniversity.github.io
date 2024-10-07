@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About US</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .header{
+        padding: 100px 40px 20px 40px;
+        background-image: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0,0.7)),url(./images/student.png.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 30vh;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        color: antiquewhite;
+    }
+    .header h1{
+        text-align: center;
+    }
+    .header a{
+        text-decoration: none;
+        float: left;
+        margin: 30pxpx;
+        color: antiquewhite;
+        background: blueviolet;
+        padding: 15px 25px;
+        border-radius: 5px;
+        transition: .7s ease;
+    }
+    .aboutus{
+        padding: 50px 50px;
+        width: 90%;
+        display: flex;
+        gap: 50px;
+       
+    }
+    .content h4{
+        text-align: center;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 1rem;
+    }
+    
+    .image img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .button-section a{
+        color: antiquewhite;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px 15px;
+        background: blueviolet;
+        border-radius: 10px;
+        transition: .5s ease;
+    }
+    .button-section a:hover{
+        transform: scale(1.1);
+        box-shadow: 1px 2px 2px 1px blueviolet;
+    }
+    .icons-container{
+        margin-top: 20px;
+    }
+    .icons-container i{
+         padding: 5px 5px;
+    background: antiquewhite;
+    margin-top: 5px;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    cursor: pointer;
+    transition: 1s ease;
+    }
+    .icons-container i:hover{
+    transform: scale(1.1);
+    background-color: blueviolet;
+    color: antiquewhite;
+    border: 1px solid antiquewhite;
+    }
+
+    @media (max-width:768px) {
+        .header{
+            min-height: 10vh;
+            background-size: cover;
+            width: 90%;
+
+        }
+        .header h1{
+        text-align: center;
+        font-size: 1.2rem;
+       }
+       .content p{
+        font-size: 0.7rem;
+       }
+       .aboutus{
+        display: block;
+        gap: 50px;
+    }
+    .image img{
+        width: 80%;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    .button-section{
+        margin-top: 20px;
+    }
+    .header a{
+        padding: 7px 12px;
+        
+
+    }
+    }
+</style>
+<body>
+    <div class="header">
+        <h1>ABOUT US</h1>
+        <a href="index.html">BACK TO HOME</a>
+    </div>
+
+    <section>
+        <div class="aboutus">
+                <div class="content">
+                  <h4>This Is The Litle Hint About Us</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dolore quod ea autem voluptatum molestiae.
+                  Fugiat cum atque, nostrum molestiae rem, pariatur adipisci optio amet omnis odio vero deserunt harum.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dolore quod ea autem voluptatum molestiae.
+                  Fugiat cum atque, nostrum molestiae rem, pariatur adipisci optio amet omnis odio vero deserunt harum.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dolore quod ea autem voluptatum molestiae.
+                  Fugiat cum atque, nostrum molestiae rem, pariatur adipisci optio amet omnis odio vero deserunt harum.</p>
+
+
+                  <div class="button-section">
+                  <a href="#">Learn More</a>
+                  </div>
+                  <div class="icons-container">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  </div>
+                </div>
+        
+            <div class="image">
+                <img src="./images/img5.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

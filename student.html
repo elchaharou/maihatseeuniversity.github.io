@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .header{
+        padding: 100px 40px 20px 40px;
+        background-image: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0,0.7)),url(./images/student.png.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 30vh;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    .header h1{
+        color: antiquewhite;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .header a{
+        text-decoration: none;
+        float: left;
+        margin: 30pxpx;
+        color: antiquewhite;
+        background: blueviolet;
+        padding: 15px 25px;
+        border-radius: 5px;
+        transition: .7s ease;
+    }
+    .header a:hover{
+        transform: scale(1.1);
+        box-shadow: 1px 2px 1px 2px  antiquewhite;
+    }
+    h2{
+        text-align: center;
+        color: blueviolet;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .gallery{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        margin: 5% auto 0;
+        box-sizing: border-box;
+    }
+    .image-box{
+        margin: 0 1%;
+        flex-grow: 1;
+        flex-basis: 0;
+        transition: .5s;
+        
+    }
+    .image-box img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        transition: .5s;
+    }
+    .image-box:hover{
+        flex-basis: 25%;
+    }
+
+
+    @media (max-width:768px){
+        .header{
+            min-height: 10vh;
+        }
+        .header h1{
+            font-size: 1rem;
+           
+        }
+
+        .gallery{
+        width: 100%;
+        height: 80%;
+        display: block;
+        margin: 3% auto 0;
+        box-sizing: border-box;
+       }
+
+       .header a{
+        padding: 7px 10px;
+        margin-bottom: 10px;
+    
+        
+
+       }
+    }
+
+
+
+
+
+</style>
+<body>
+    <div class="header">
+        <h1>STUDENT</h1>
+        <a href="index.html">BACK TO HOME</a>
+
+
+    </div>
+    <section>
+        <h2>Our student</h2>
+       <div class="gallery">
+        <div class="image-box">
+            <img src="./images/myimg.1.jpg" alt="student">
+        </div>
+        <div class="image-box">
+            <img src="./images/myimg.2.jpg" alt="student">
+        </div>
+        <div class="image-box">
+            <img src="./images/myimg.3.jpg" alt="student">
+        </div>
+        <div class="image-box">
+            <img src="./images/myimg.4.jpg" alt="student">
+        </div>
+        <div class="image-box">
+            <img src="./images/myimg.5.jpg" alt="student">
+        </div>
+        <div class="image-box">
+            <img src="./images/myimg.1.jpg" alt="student">
+        </div>
+       </div>
+
+    </section>
+</body>
+</html>

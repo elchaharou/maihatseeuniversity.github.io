@@ -1,0 +1,669 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: red solid 1px; */
+}
+.header{
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+    background-color: antiquewhite;
+    z-index: 999 ;
+
+}
+.header img{
+    width: 5%;
+    margin-left: 10px;
+}
+.navbar a{
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    color: blueviolet;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 999 ;
+}
+.navbar a:hover{
+    transform: scale(1.1);
+    color:burlywood;
+}
+#home{
+    background:linear-gradient(rgba(0,0,10,0.7),rgba(0,0,0,0.7)),url('img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+#home h2{
+    padding-top: 18%;
+    color: antiquewhite;
+    font-size:3rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+
+}
+#home p{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 300;
+    font: size 1rem;;
+}
+.btn{
+    padding-top: 30px;
+    
+}
+.btn .courses-btn{
+    color: blueviolet;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+}
+.btn .courses-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 5px 10px 5px blueviolet;
+
+}
+.btn .student{
+    color: antiquewhite;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.btn .student:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 5px 10px 5px antiquewhite;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.student{
+    margin-right: 20px;
+    padding: 10px 25px;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+.courses-btn{
+    margin-left: 20px;
+    padding: 10px 25px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    color: blueviolet;
+}
+#check{
+    display: none;
+}
+.icons{
+    position: absolute;
+    font-size:2rem;
+    color: blueviolet;
+    cursor: pointer;
+    display: none;
+    right: 5%;
+} 
+
+/* closing header section */
+
+
+
+
+#features{
+    padding:20px;
+    text-align: center;
+    background-color: aliceblue;
+    /* margin: 50px; */
+    min-height: 40vh;
+    align-items: center;
+    
+}
+#features h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: blueviolet;
+    padding-bottom: 10px;
+}
+#features p{
+    padding-bottom: 5px;
+    font-family: sans-serif;
+    color: black;
+}
+.feature-box{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+#features .icon-box{
+    background-color: transparent;
+    text-align: start;
+    width: 30%;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+    margin-top: 5%;
+}
+#features .icon-box i{
+    font-size: 3.4rem;
+    color: blueviolet;
+}
+#features .icon-box h3{
+    padding-top:13px 0 10px 0;
+    color: blueviolet;
+
+}
+
+
+/* closing feature section */
+
+#courses{
+   width: 100%;
+   min-height: 100vh;
+   padding: 20px;
+}
+#courses h1{
+    padding-top: 10px;
+    color: blueviolet;
+    font-size: 3.5rem;
+    text-align: center;
+}
+#courses p{
+    color: black;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.row-container{
+    width: 300px;
+    background-color: antiquewhite;
+    margin: 20px;
+    padding: 0px 0px 5% 0px;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+
+}
+
+.row-container img{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+.row-container h4{
+    text-align: center;
+    padding: 3px 0 3px 0;
+    font-size: 2rem;
+    color: blueviolet;
+}
+.row-container p{
+    font-size: 0.6rem;
+    text-align: center;
+
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,2fr));
+    grid: 30px;
+    margin: 40px 90px;
+    align-items: center;
+    
+}
+
+
+/* closing courses style */
+
+#registration{
+    padding: 100px 40px 20px 40px;
+    background-image: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0,0.7)),url(./images/regback-img.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+}   
+#registration .main-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.reminder p{
+    font-family:Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+    margin-bottom: 20px;
+}
+.reminder h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: antiquewhite;
+    margin-bottom: 20px;
+}
+.time{
+    display: flex;
+    
+}
+.time .date{
+    padding: 10px;
+    margin: 10px;
+    background: rgba(225, 225, 225, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    color: antiquewhite;
+    font-weight: bold;
+
+}
+.form{
+    width: 25%;
+    padding: 15px 5px;
+    background: antiquewhite;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form input{
+    width: 70%;
+    padding: 10px 20px;
+    margin: 10px;
+    background: transparent;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+}
+.button{
+    padding: 10px 20px;
+    background: blueviolet;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.9s ease;
+
+}
+.button a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.button:hover{
+    transform: scale(1.1);
+    background: antiquewhite;
+    box-shadow: 1px 2px 1px 2px blueviolet;
+    transition:  0.9s ease;
+}
+.button a:hover{
+    color: blueviolet;
+}
+
+/* closing register css */
+
+
+#expert{
+    padding: 40px 50px 40px 50px;
+    text-align: center;
+}
+#expert h1{
+    color: blueviolet;
+    font-size: 3rem;
+    padding-top: 30px;
+}
+#expert p{
+    color:black;
+    font-size: 1rem;
+    padding-bottom: 30px;
+    font-weight: 300;
+}
+#expert .expert-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,2fr));
+    grid: 30px;
+    margin: 20px 40px;
+    align-items: center;
+    
+}
+.expert-container .expert-profile img{
+    width: 50%;
+    border-radius: 70%;
+}
+.expert-profile{
+    margin-bottom: 20px;
+
+}
+.expert-container .expert-profile h3{
+    margin: 3px 0px;
+    color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.expert-container .expert-profile span{
+    text-transform: lowercase;
+}
+.expert-container .expert-profile .icon-fropile i{
+    padding: 5px 5px;
+    background: antiquewhite;
+    margin-top: 5px;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    cursor: pointer;
+    transition: 1s ease;
+}
+.expert-container .expert-profile .icon-fropile i:hover{
+    transform: scale(1.1);
+    background-color: blueviolet;
+    color: antiquewhite;
+    border: 1px solid antiquewhite;
+}
+
+/* closing css of our-espert section */
+footer{
+    background-color: black;
+    padding: 8vw;
+    color: white;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+
+}
+footer.footer-col{
+    padding-bottom: 20px;
+}
+
+.footer-col h3{
+    padding-bottom: 20px;
+    color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+footer li{
+    list-style: none;
+    padding: 10px 0;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: 0.5s ease;
+
+}
+footer li:hover{
+    color: blueviolet;
+}
+.footer-col p{
+    padding-bottom: 20px;
+}
+.footer-col .subscription input{
+    background: transparent;
+    padding: 10px 12px;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    color: white;
+}
+.footer-col .subscription a{
+    text-decoration: none;
+    background-color: blueviolet;
+    color:antiquewhite;
+    font-weight: bold;
+    padding: 10px 12px;
+    border-radius: 5px;
+    transition: 1s ease;
+
+}
+.footer-col .subscription a:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 1px 3px 1px white;
+}
+
+.copy-write{
+    padding-top: 20px;
+}
+.footer-icon i{
+padding-top: 20px;
+padding: 5px 5px;
+background: antiquewhite;
+margin-top: 5px;
+border: 1px solid blueviolet;
+color: blueviolet;
+cursor: pointer;
+transition: 1s ease
+}
+
+.footer-icon i:hover{
+    transform: scale(1.1);
+    background-color: blueviolet;
+    color: antiquewhite;
+    border: 1px solid antiquewhite;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDEA QUIRY START */
+
+@media(max-width: 992px) {
+    .header{
+        padding: 1.4rem 5%;
+    }
+}
+@media (max-width: 782px) {
+    .icons{
+        display: block;
+    }
+    #check:checked~ .icons #menu-icon{
+        display: none;
+    }
+
+    #close-icon{
+        display: none;
+    }
+
+    #check:checked~ .icons #close-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 8%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: antiquewhite;
+        border: 1px solid blueviolet;
+        border-radius: 8px;
+        transition: .3s ease;
+        overflow: hidden;
+    }
+    #check:checked~.navbar{
+        height: 16.7rem;
+
+    }
+    .navbar a{
+        display: block;
+        font-size: 10px;
+        margin: 5px;
+        text-align: center;
+    
+    }
+    #home h2{
+        font-size: 1.3rem;
+       
+    }
+
+    #home p{
+        font-size: 10px;
+    }
+    .btn {
+       font-size: 0.5rem;
+    }
+    #features{
+        width: 100%;
+        padding: 5px;
+    }
+       
+    #features h1 {
+        font-size: 1rem;
+    }
+    #features p{
+        font-size: 0.7rem;
+    }
+    .feature-box{
+        display: block;
+        gap: 7px;
+        
+    }
+    #features .icon-box{
+        width: 100%;
+        
+    }
+
+    /* couses media query */
+    #courses{
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+    }
+    .row{
+        display: grid;
+        width: 50%;
+        align-items: center;
+        margin-left: -10px;
+    }
+    .row-container{
+        width: 200px;
+        background-color: antiquewhite;
+        margin: 20px;
+        padding: 0px 0px 5% 0px;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid blueviolet;
+    }    
+    #courses .container h1{
+        font-size: 1.1rem;
+        margin-bottom: 2px;
+
+    }
+    #courses .container p{
+        font-size: 0.7rem;
+    }
+    #courses .row-container{
+        width: 100%;
+        align-items: center;
+        /* margin-right: 50px; */
+    }
+    #courses .row-container img{
+        width: 100%;
+    };
+
+
+    /* media query registration */
+    .main-container{
+        display: grid;
+        flex-direction:row;
+
+    }
+    .reminder p{
+        font-size: 0.5rem;
+    }
+    .reminder h1{
+        font-size:1.0rem;
+
+    }
+    .time .date{
+        padding: 5px;
+        margin: 5px;
+        background: rgba(225, 225, 225, 0.25);
+        border-radius: 10px;
+        text-align: center;
+        color: antiquewhite;
+        font-weight: bold;
+    }
+
+    .form{
+        width:100%;
+        padding: 20px 10px;
+        background: antiquewhite;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+
+
+
+
+    #registration .main-container{
+        display: block;
+        margin: 20px;
+        
+    }
+    .form h3{
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+
+
+    /* expert media quiry */
+    #expert h1{
+        font-size: 1.5rem;  
+    }
+    #expert p{
+        font-size: 0.9rem;
+    }
+    #expert .expert-container{
+        display:block;
+        margin: 20px;
+    }
+    .expert-container .expert-profile img{
+        width: 50%;
+        border-radius: 25px;
+    }
+    .expert-profile{
+        margin-bottom: 10px;
+    
+    }
+    .footer-col .subscription a{
+        text-decoration: none;
+        background-color: blueviolet;
+        color:red;
+        font-weight: bold;
+        padding: 5px 6px;
+        border-radius: 3px;
+        transition: 1s ease;
+        gap: 10px;
+    
+    }
+
+
+    
+    
+
+}
